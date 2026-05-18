@@ -10,24 +10,32 @@ explanation, every error has a plain-English fix, and the sample-video button
 demonstrates the end-to-end flow without forcing them to find a URL.
 """
 
+import sys
 import traceback
 from datetime import date
 from tempfile import NamedTemporaryFile
 
 import streamlit as st
 
-from briefdeck import __version__
-from briefdeck.config import get_api_key, save_api_key, clear_api_key
-from briefdeck.ingest.youtube import (
-    fetch_transcript,
-    extract_video_id,
-)
-from briefdeck.render.builder import build_deck
-from briefdeck.synthesize import (
-    synthesize_outline, synthesize_explore,
-    DEFAULT_SLIDE_COUNT, DEFAULT_QUALITY,
-    detect_provider, model_for,
-)
+try:
+    from briefdeck import __version__
+    from briefdeck.config import get_api_key, save_api_key, clear_api_key
+    from briefdeck.ingest.youtube import (
+        fetch_transcript,
+        extract_video_id,
+    )
+    from briefdeck.render.builder import build_deck
+    from briefdeck.synthesize import (
+        synthesize_outline, synthesize_explore,
+        DEFAULT_SLIDE_COUNT, DEFAULT_QUALITY,
+        detect_provider, model_for,
+    )
+except Exception as _import_err:
+    st.error(f"**Startup import failed:** {type(_import_err).__name__}: {_import_err}")
+    st.code(traceback.format_exc())
+    st.write(f"Python: {sys.version}")
+    st.write(f"sys.path: {sys.path}")
+    st.stop()
 
 
 SAMPLE_URL = "https://www.youtube.com/watch?v=LIkYVsxMpS8"
