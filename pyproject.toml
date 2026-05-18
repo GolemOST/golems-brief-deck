@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [
-    { name = "Raymond P. Capisinio", email = "rcapisinio@gmail.com" },
+    { name = "Golem's Brief Deck" },
 ]
 dependencies = [
     "python-pptx>=1.0.0",

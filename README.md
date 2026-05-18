@@ -1,4 +1,4 @@
-# BriefDeck
+# Golem's Brief Deck
 
 **Research reports and briefing decks from any YouTube video.** Paste a URL, pick a mode, and get either a structured markdown research report (`.md`) or a navy/gold PowerPoint deck (`.pptx`) — both designed for technical and industrial executives.
 
@@ -8,7 +8,7 @@ Runs locally. Your data and your API key never leave your machine except to call
 
 ## Why this exists
 
-Generic AI tools (Gamma, Tome, ChatGPT) produce generic outputs. BriefDeck is opinionated for **industrial briefings** — Plant Managers, Reliability Engineers, Ops Directors, investors in industrial AI. Two surfaces, same backbone:
+Generic AI tools (Gamma, Tome, ChatGPT) produce generic outputs. Golem's Brief Deck is opinionated for **industrial briefings** — Plant Managers, Reliability Engineers, Ops Directors, investors in industrial AI. Two surfaces, same backbone:
 
 - **Research Report mode** — a markdown briefing with Source table, Core Thesis, the source's named framework, Pros / Cons, Latest Trends, and an optional dedicated "Your Angle" section that maps the source onto your specific situation.
 - **Briefing Deck mode** — a corporate navy + gold PowerPoint, 8–22 slides, no emoji, no clipart, no "AI shimmer". Every slide is structured for a technical reader.
@@ -95,7 +95,7 @@ Three modules, two output modes, ~900 lines of Python.
 
 ## Slide types
 
-BriefDeck ships with 8 layout types. Claude picks which to use per section.
+Golem's Brief Deck ships with 8 layout types. Claude picks which to use per section.
 
 | Type | Use case |
 |---|---|
@@ -139,4 +139,4 @@ MIT — see [LICENSE](LICENSE).
 
 ## Built by
 
-Raymond P. Capisinio · rcapisinio@gmail.com · Abu Dhabi, UAE
+Golem's Brief Deck

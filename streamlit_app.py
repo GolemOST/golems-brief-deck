@@ -1,4 +1,4 @@
-"""BriefDeck — Streamlit UI.
+"""Golem's Brief Deck — Streamlit UI.
 
 Two output modes:
   1. RESEARCH REPORT  — a structured markdown briefing (.md file)
@@ -96,7 +96,7 @@ def _friendly_error(exc: Exception) -> tuple[str, str]:
 
 # ─── Page setup ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="BriefDeck — Industrial Research & Briefing Decks",
+    page_title="Golem's Brief Deck — Industrial Research & Briefing Decks",
     page_icon="📊",
     layout="centered",
 )
@@ -129,7 +129,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.markdown('<p class="briefdeck-title">BriefDeck</p>', unsafe_allow_html=True)
+st.markdown('<p class="briefdeck-title">Golem\'s Brief Deck</p>', unsafe_allow_html=True)
 st.markdown(
     '<p class="briefdeck-tag">Turn any YouTube video into a research report or a briefing deck.</p>',
     unsafe_allow_html=True,
@@ -178,10 +178,10 @@ if not _has_key():
 
 
 # ─── First-time explainer ────────────────────────────────────────────────────
-with st.expander("👋  First time here?  What is BriefDeck?", expanded=False):
+with st.expander("👋  First time here?  What is Golem's Brief Deck?", expanded=False):
     st.markdown(
         """
-**What BriefDeck does:** You paste a YouTube link. BriefDeck reads the
+**What Golem's Brief Deck does:** You paste a YouTube link. BriefDeck reads the
 transcript, then either (A) asks an AI to write a structured **research
 report** (markdown file you can paste into Notion, Docs, or a memo), or
 (B) asks the AI to design a **briefing deck** (PowerPoint file styled for
@@ -204,7 +204,7 @@ technical / industrial executives).
 
 BriefDeck auto-detects which provider's key you paste.
 
-**What BriefDeck does NOT do:**
+**What Golem's Brief Deck does NOT do:**
 - Send your data to a server I control. Everything runs on your machine.
 - Store your API key on the internet. It stays in a local file on YOUR computer.
 - Charge you anything. You pay the AI provider directly (often $0).
@@ -597,7 +597,7 @@ if generate:
 st.markdown(
     """
 <div style="text-align: center; color: #888; font-size: 0.85em; margin-top: 3em;">
-  Built by Raymond P. Capisinio  ·
+  Golem's Brief Deck  ·
   <a href="https://github.com/" style="color: #003366;">source on GitHub</a>  ·
   MIT licensed
 </div>

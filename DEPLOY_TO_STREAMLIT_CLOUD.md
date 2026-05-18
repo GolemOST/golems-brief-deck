@@ -10,7 +10,7 @@ Time required: ~30 minutes the first time.
 
 ## What you'll end up with
 
-A public URL like `https://briefdeck-rcapisinio.streamlit.app` that:
+A public URL like `https://golems-brief-deck.streamlit.app` that:
 - Anyone can visit (no install)
 - Has the polished UI we just built — with the **Research Report / Briefing Deck** mode selector
 - Lets users paste their own Gemini / OpenAI / Anthropic API key (BYO model — they pay the provider directly, you pay nothing)
@@ -31,7 +31,7 @@ If you already do, skip to Step 2.
 ## Step 2 — Push the BriefDeck code to GitHub
 
 Easiest way is with **GitHub Desktop** (which you already have at
-`C:\Users\Raymond\AppData\Local\GitHubDesktop\`).
+`C:\Users\<your-username>\AppData\Local\GitHubDesktop\`).
 
 1. Open **GitHub Desktop**.
 2. **File → Add Local Repository** → browse to `C:\Projects\BRIEFDECK\`.
@@ -61,8 +61,8 @@ Your code is now at `https://github.com/<your-username>/briefdeck`.
    - **Repository:** `<your-username>/briefdeck`
    - **Branch:** `main`
    - **Main file path:** `streamlit_app.py`
-   - **App URL:** pick something like `briefdeck-rcapisinio` (becomes
-     `briefdeck-rcapisinio.streamlit.app`)
+   - **App URL:** pick something like `golems-brief-deck` (becomes
+     `golems-brief-deck.streamlit.app`)
 4. Click **Advanced settings** (optional):
    - Set **Python version:** 3.11 or 3.12
 5. Click **Deploy!**
@@ -95,7 +95,7 @@ Send people the URL with a one-paragraph intro:
 > API key (instructions inside the app) which is FREE on Gemini's 1,500/day
 > free tier.
 >
-> Try it: https://briefdeck-rcapisinio.streamlit.app
+> Try it: https://golems-brief-deck.streamlit.app
 
 ---
 

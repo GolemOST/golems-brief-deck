@@ -1,11 +1,11 @@
 ================================================================
-                       B R I E F D E C K
+              G O L E M ' S   B R I E F   D E C K
        Research Reports & Briefing Decks from YouTube
 ================================================================
 
 WHAT THIS DOES
 --------------
-Paste a YouTube link.  BriefDeck listens to the video and gives
+Paste a YouTube link.  Golem's Brief Deck listens to the video and gives
 you back ONE of two things — your choice:
 
   (1)  RESEARCH REPORT  -- a markdown briefing (.md file)
@@ -24,7 +24,7 @@ You pick the mode with a radio button in the app.  Takes about
 HOW TO USE IT  (3 STEPS)
 ------------------------
 
-STEP 1.  DOUBLE-CLICK:    "Start BriefDeck.bat"
+STEP 1.  DOUBLE-CLICK:    "Start Golem's Brief Deck.bat"
          A black window will open.  This is normal.
          Wait 5-10 seconds.  Your browser will open by itself.
 
@@ -45,13 +45,13 @@ STEP 3.  IN THE MAIN AREA:
 
 WHEN YOU'RE DONE
 ----------------
-Close the black console window.  That stops BriefDeck.
+Close the black console window.  That stops Golem's Brief Deck.
 Open your downloaded .pptx file in PowerPoint.  Done.
 
 
 FIRST TIME?  YOU NEED AN API KEY  (3 OPTIONS)
 ---------------------------------------------
-BriefDeck auto-detects which provider you're using.
+Golem's Brief Deck auto-detects which provider you're using.
 For most people, Option A (Gemini) is the easiest.
 
 
@@ -63,7 +63,7 @@ FREE.  No credit card required.  1,500 decks per day on free tier.
 2.  Sign in with your Google account
 3.  Click "Create API key"
 4.  Copy the key (starts with "AIza")
-5.  Paste it into BriefDeck's sidebar
+5.  Paste it into Golem's Brief Deck's sidebar
         (it auto-saves once you click Save)
 
 That's it.  60 seconds.  Zero cost.
@@ -75,7 +75,7 @@ OPTION B  -  OPENAI  (cheaper than Anthropic, ~2-5 cents per deck)
 3.  Add a few dollars of credit
 4.  Click "Create new secret key"
 5.  Copy the key (starts with "sk-proj-" or "sk-")
-6.  Paste it into BriefDeck's sidebar
+6.  Paste it into Golem's Brief Deck's sidebar
 
 
 OPTION C  -  ANTHROPIC  (best quality for technical / industrial content)
@@ -84,12 +84,12 @@ OPTION C  -  ANTHROPIC  (best quality for technical / industrial content)
 3.  Add a few dollars of credit (a deck costs about 5-15 cents)
 4.  Visit "API Keys" --> "Create Key"
 5.  Copy the key (starts with "sk-ant-")
-6.  Paste it into BriefDeck's sidebar
+6.  Paste it into Golem's Brief Deck's sidebar
 
 
 WHAT DOES IT COST?
 ------------------
-- BriefDeck itself:        FREE
+- Golem's Brief Deck itself:        FREE
 - Per deck (paid to AI):
     * Gemini key:     FREE  (1,500/day on free tier)
     * OpenAI key:     $0.02 - $0.05
@@ -101,7 +101,7 @@ SOMETHING NOT WORKING?
 ----------------------
 - The black window closes immediately?
     Python may not be installed.  Install Python 3.11 from
-    python.org first, then double-click "Start BriefDeck.bat" again.
+    python.org first, then double-click "Start Golem's Brief Deck.bat" again.
 
 - "Module not found" error in the black window?
     Open a terminal in this folder and run:
@@ -118,6 +118,5 @@ SOMETHING NOT WORKING?
     Make sure you added credits at console.anthropic.com.
 
 ================================================================
-                Built by Raymond P. Capisinio
-              rcapisinio@gmail.com | Abu Dhabi
+              Golem's Brief Deck
 ================================================================

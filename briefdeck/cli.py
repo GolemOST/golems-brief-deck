@@ -1,4 +1,4 @@
-"""BriefDeck CLI — YouTube URL → research report (.md) or briefing deck (.pptx)."""
+"""Golem's Brief Deck CLI — YouTube URL → research report (.md) or briefing deck (.pptx)."""
 
 import argparse
 import sys
@@ -49,7 +49,7 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         prog="briefdeck",
         description=(
-            "BriefDeck — turn a YouTube video into a research report (.md) "
+            "Golem's Brief Deck — turn a YouTube video into a research report (.md) "
             "or a briefing deck (.pptx)."
         ),
     )

@@ -55,7 +55,7 @@ def build_deck(outline: dict, output_path: str | Path) -> Path:
         try:
             renderer(slide, slide_data, accent=accent)
         except Exception as e:
-            # Never crash silently per Raymond's CLAUDE.md rule —
+            # Never crash silently — log loudly so bad slides don't kill the deck.
             # but also never let one bad slide kill the deck. Add an error slide.
             from briefdeck.render.slide_types import render_bullets
             render_bullets(slide, {
