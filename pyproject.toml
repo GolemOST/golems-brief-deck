@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "briefdeck"
+version = "0.2.0"
+description = "Industrial research reports and briefing decks from YouTube — markdown (.md) or PowerPoint (.pptx) in one command"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Raymond P. Capisinio", email = "rcapisinio@gmail.com" },
+]
+dependencies = [
+    "python-pptx>=1.0.0",
+    "youtube-transcript-api>=0.6.0",
+    "anthropic>=0.40.0",
+    "openai>=1.40.0",
+    "google-genai>=1.0.0",
+    "streamlit>=1.30.0",
+]
+
+[project.scripts]
+briefdeck = "briefdeck.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["briefdeck*"]
+
+[tool.setuptools.package-data]
+briefdeck = ["prompts/*.txt"]

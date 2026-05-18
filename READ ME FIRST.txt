@@ -1,0 +1,123 @@
+================================================================
+                       B R I E F D E C K
+       Research Reports & Briefing Decks from YouTube
+================================================================
+
+WHAT THIS DOES
+--------------
+Paste a YouTube link.  BriefDeck listens to the video and gives
+you back ONE of two things — your choice:
+
+  (1)  RESEARCH REPORT  -- a markdown briefing (.md file)
+       Structured sections, verbatim quotes, tables, and a custom
+       "Your Angle" section that ties the source back to YOUR
+       situation.  Great for memos, pre-meeting prep, due-diligence.
+
+  (2)  BRIEFING DECK    -- a PowerPoint (.pptx file)
+       Navy + gold corporate slides, 8-22 of them.  Great for
+       putting in front of a Plant Manager / CEO / investor.
+
+You pick the mode with a radio button in the app.  Takes about
+30-60 seconds per output.
+
+
+HOW TO USE IT  (3 STEPS)
+------------------------
+
+STEP 1.  DOUBLE-CLICK:    "Start BriefDeck.bat"
+         A black window will open.  This is normal.
+         Wait 5-10 seconds.  Your browser will open by itself.
+
+STEP 2.  IN THE BROWSER:
+           - Look at the LEFT SIDEBAR
+           - Paste an API key (Gemini "AIza..." is FREE -- recommended)
+           - Click "Save"
+         (First time only.  After this, the key is remembered.)
+
+STEP 3.  IN THE MAIN AREA:
+           - Pick a mode:  RESEARCH REPORT  or  BRIEFING DECK
+           - Paste a YouTube URL
+           - Optional: add a topic to focus the AI
+           - Optional: add YOUR angle to get a custom section
+           - Click the "Generate" button
+           - When it's ready, click "Download"
+
+
+WHEN YOU'RE DONE
+----------------
+Close the black console window.  That stops BriefDeck.
+Open your downloaded .pptx file in PowerPoint.  Done.
+
+
+FIRST TIME?  YOU NEED AN API KEY  (3 OPTIONS)
+---------------------------------------------
+BriefDeck auto-detects which provider you're using.
+For most people, Option A (Gemini) is the easiest.
+
+
+** OPTION A  -  GOOGLE GEMINI  **  RECOMMENDED  **
+==================================================
+FREE.  No credit card required.  1,500 decks per day on free tier.
+
+1.  Go to:  https://aistudio.google.com/app/apikey
+2.  Sign in with your Google account
+3.  Click "Create API key"
+4.  Copy the key (starts with "AIza")
+5.  Paste it into BriefDeck's sidebar
+        (it auto-saves once you click Save)
+
+That's it.  60 seconds.  Zero cost.
+
+
+OPTION B  -  OPENAI  (cheaper than Anthropic, ~2-5 cents per deck)
+1.  Go to:  https://platform.openai.com/api-keys
+2.  Sign up + add payment method
+3.  Add a few dollars of credit
+4.  Click "Create new secret key"
+5.  Copy the key (starts with "sk-proj-" or "sk-")
+6.  Paste it into BriefDeck's sidebar
+
+
+OPTION C  -  ANTHROPIC  (best quality for technical / industrial content)
+1.  Go to:  https://console.anthropic.com/
+2.  Sign up + add payment method
+3.  Add a few dollars of credit (a deck costs about 5-15 cents)
+4.  Visit "API Keys" --> "Create Key"
+5.  Copy the key (starts with "sk-ant-")
+6.  Paste it into BriefDeck's sidebar
+
+
+WHAT DOES IT COST?
+------------------
+- BriefDeck itself:        FREE
+- Per deck (paid to AI):
+    * Gemini key:     FREE  (1,500/day on free tier)
+    * OpenAI key:     $0.02 - $0.05
+    * Anthropic key:  $0.05 - $0.15
+- That's it.  No subscriptions.  No accounts on my side.
+
+
+SOMETHING NOT WORKING?
+----------------------
+- The black window closes immediately?
+    Python may not be installed.  Install Python 3.11 from
+    python.org first, then double-click "Start BriefDeck.bat" again.
+
+- "Module not found" error in the black window?
+    Open a terminal in this folder and run:
+        pip install -r requirements.txt
+    Then try again.
+
+- The browser doesn't open?
+    Look at the black window for a line like
+    "Network URL:  http://localhost:8501"
+    Open that URL in your browser manually.
+
+- Anthropic says my key is invalid?
+    Double-check you copied the whole thing (starts with sk-ant-).
+    Make sure you added credits at console.anthropic.com.
+
+================================================================
+                Built by Raymond P. Capisinio
+              rcapisinio@gmail.com | Abu Dhabi
+================================================================
